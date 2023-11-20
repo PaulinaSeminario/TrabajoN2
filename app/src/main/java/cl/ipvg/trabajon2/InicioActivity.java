@@ -65,8 +65,10 @@ public class InicioActivity extends AppCompatActivity implements OnMapReadyCallb
         btn_buscar = findViewById(R.id.btnBuscar);
         supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapa);
 
-        String[] placeTypeList = {"parques"};
-        String[] placeNameList = {"Parques"};
+        String[] placeTypeList = {"park","supermarket","hospital"};
+        String[] placeNameList = {"Parque","Super","Veterinaria"};
+
+
 
         spin_text.setAdapter(new ArrayAdapter<>(InicioActivity.this, android.R.layout.simple_spinner_dropdown_item, placeNameList));
 
