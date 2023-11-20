@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/anton</item>
+        <item>@font/arvo_bold</item>
+        <item>@font/averia_libre_bold</item>
+        <item>@font/benchnine_bold</item>
+        <item>@font/numans</item>
+    </array>
+</resources>

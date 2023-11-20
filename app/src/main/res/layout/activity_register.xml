@@ -4,40 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#526D1C"
     tools:context=".RegisterActivity">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="52dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/atras"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/ic_atras"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="9dp" />
 
     <EditText
         android:id="@+id/nombre"
         android:layout_width="374dp"
         android:layout_height="66dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="72dp"
         android:layout_weight="1"
         android:ems="10"
+        android:fontFamily="@font/averia_libre_bold"
         android:inputType="text"
         android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="14dp" />
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <EditText
         android:id="@+id/correoRegister"
@@ -45,8 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:fontFamily="@font/averia_libre_bold"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/nombre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/nombre"
@@ -58,8 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:fontFamily="@font/averia_libre_bold"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/correoRegister"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/correoRegister"
@@ -71,8 +58,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:fontFamily="@font/averia_libre_bold"
         android:hint="Confirm Password"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/contraseñaRegister"
         app:layout_constraintStart_toStartOf="@+id/contraseñaRegister"
         app:layout_constraintTop_toBottomOf="@+id/contraseñaRegister" />
@@ -82,6 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:fontFamily="@font/averia_libre_bold"
         android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/confirmarContraseña"
@@ -89,4 +79,33 @@
         app:layout_constraintStart_toStartOf="@+id/confirmarContraseña"
         app:layout_constraintTop_toBottomOf="@+id/confirmarContraseña"
         app:layout_constraintVertical_bias="0.871" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="407dp"
+        android:layout_height="163dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/atras"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_atras"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="9dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
